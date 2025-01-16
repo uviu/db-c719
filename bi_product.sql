@@ -5,4 +5,4 @@ WHEN (new.prodid IS NULL)
 BEGIN
     :new.prodid := prodid.NEXTVAL;
 END;
-COMMIT;
+
