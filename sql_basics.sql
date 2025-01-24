@@ -4,7 +4,7 @@ FROM emp
 WHERE sal * 1.1 <= comm;
 
 --aufgabe 19
-SELECT ename, deptno, dname
+SELECT ename, e.deptno, dname
 FROM emp e, dept d
 WHERE e.deptno = d.deptno;
 
