@@ -34,7 +34,7 @@ ON e.deptno = d.deptno
 WHERE ename LIKE '%A%';
 
 --aufgabe 24
-SELECT e.name, e.sal, k.name
+SELECT e.ename, e.sal, k.ename
 FROM emp e, emp k
 WHERE k.ename = 'KING' AND e.mgr = k.empno;
 --als nested query 
