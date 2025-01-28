@@ -101,3 +101,12 @@ CREATE TABLE besteht_aus (
     FOREIGN KEY (workout_id) REFERENCES workout ON DELETE CASCADE,
     PRIMARY KEY (uebung_id, workout_id)
 )
+    
+CREATE TABLE dbo.bewertungshistorie (
+    historien_id INT IDENTITY(1,1) PRIMARY KEY,
+    user_id NUMERIC(9),                        
+    trainer_id NUMERIC(5),                       
+    alte_bewertung DECIMAL(6,2),                 
+    neue_bewertung DECIMAL(6,2),                
+    aenderungsdatum DATETIME                     
+);
